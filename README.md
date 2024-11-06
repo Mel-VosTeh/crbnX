@@ -4,6 +4,7 @@
 This project implements an ETL (Extract, Transform, Load) pipeline and a RESTful API using Python and FastAPI.
 
 **Project Structure**
+```
 crbnX-Project/
 ├── data/
 │   ├── transactions_sample.csv    # Sample data file for ingestion
@@ -14,7 +15,7 @@ crbnX-Project/
 ├── api.py                         # Script to run the FastAPI server
 ├── requirements.txt              
 ├── README.md                      # Project documentation (this file)
-
+```
 
 **Clone the Repository**
 git clone https://github.com/Mel-VosTeh/crbnX.git
@@ -42,6 +43,7 @@ The ETL pipeline consists of three main steps:
 
 
 **API Endpoints**
+```
 1. Root Endpoint
 URL: /
 Method: GET
@@ -71,13 +73,14 @@ Status: 200 OK
 Body: Filtered records in JSON format.
 Errors: 400: Invalid date format / 500: Server error
 Example: GET /data/filter?start_date=2023-08-25&status=complete
-
+```
 
 **Unit Tests**
 - Located in the `tests` directory, covering both the ETL pipeline and API.
-- Run etl test: python -m unittest test-etl.py
-- Run api test: python -m unittest test-api.py
+- Run etl test: ```python -m unittest test-etl.py```
+- Run api test: ```python -m unittest test-api.py```
 
 **Author**
 Melissa Vosough (Mel-VosTeh) / melissa.v.tehrani@gmail.com
 
+---
