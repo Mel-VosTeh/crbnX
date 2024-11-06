@@ -1,0 +1,6 @@
+# crbnX Project requirements:
+pandas
+fastapi
+uvicorn
+sqlite3  
+
